@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Counter</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2020%2020'%3E%3Ctext%20x='0'%20y='14'%3E🔤%3C/text%3E%3C/svg%3E" type="image/svg+xml" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.17/tailwind.min.css" integrity="sha512-yXagpXH0ulYCN8G/Wl7GK+XIpdnkh5fGHM5rOzG8Kb9Is5Ua8nZWRx5/RaKypcbSHc56mQe0GBG0HQIGTmd8bw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/@tailwindcss/custom-forms@0.2.1/dist/custom-forms.css" rel="stylesheet" />
+
+    <style>
+        #editor {
+            background-color: #555;
+            border: none;
+            resize: none;
+        }
+
+        #editor::-webkit-scrollbar {
+            width: 8px;
+            height: 16px;
+        }
+
+        #editor::-webkit-scrollbar-track {
+            border-radius: 100vh;
+            background: #666;
+        }
+
+        #editor::-webkit-scrollbar-thumb {
+            background: #333;
+            border-radius: 100vh;
+        }
+
+        #editor::-webkit-scrollbar-thumb:hover {
+            background: #777;
+        }
+    </style>
+</head>
+<body class="bg-gray-800">
+    <div class="container w-1/2 mx-auto mt-12 text-white">
+        <p class="word-count text-black-800 text-lg mb-8">
+            <span class="words">0</span> words, <span class="characters">0</span> characters
+        </p>
+        <div class="editor-area">
+            <textarea autofocus class="form-textarea mt-1 block w-full text-white" name="editor" id="editor" cols="30" rows="10"></textarea>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

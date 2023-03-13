@@ -1,4 +1,4 @@
-# Word Counter
+# Word Counter
 
 Word and character counter app
 
